@@ -26,7 +26,7 @@ const Login = () =>{
 }
 
     return (
-      <>
+      <div className='login-page'>
  <h2>welcome to login</h2>
  <form onSubmit={handleSubmit}>
 
@@ -45,7 +45,7 @@ onChange={(e) => setPassword(e.target.value)}
 />
  <button type="submit" disabled={loading}>{loading? "Loging in ..." : "log in"}</button>
  </form>
- </>
+ </div>
    
     );
   };

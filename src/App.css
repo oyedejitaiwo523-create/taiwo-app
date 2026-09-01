@@ -407,78 +407,91 @@ body {
 .settings button {
   padding: 12px;
 }
-/* Login Page */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f4f6;
-}
-
-/* Center everything */
-body {
+.login-page {
   min-height: 100vh;
+  width: 100%;
+  background: #f4f7fb;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 20px;
 }
 
-/* Login heading */
-h2 {
-  text-align: center;
-  color: #222;
+.login-page h2 {
+  color: #1f2937;
   font-size: 30px;
   margin-bottom: 25px;
 }
 
-/* Login form */
-form {
-  width: 350px;
-  padding: 35px;
+.login-page form {
+  width: 100%;
+  max-width: 380px;
+
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
-/* Input fields */
-input {
+.login-page input {
   width: 100%;
   padding: 14px;
+
   border: 1px solid #d1d5db;
   border-radius: 8px;
+
   font-size: 15px;
   outline: none;
 }
 
-/* When you click an input */
-input:focus {
+.login-page input:focus {
   border-color: #4f46e5;
 }
 
-/* Login button */
-button {
+.login-page button {
+  width: 100%;
   padding: 14px;
+
   border: none;
   border-radius: 8px;
+
   background: #4f46e5;
   color: white;
+
   font-size: 16px;
   font-weight: bold;
+
   cursor: pointer;
 }
 
-/* Button hover */
-button:hover {
+.login-page button:hover {
   background: #3730a3;
 }
 
-/* Disabled button */
-button:disabled {
+.login-page button:disabled {
   background: #9ca3af;
   cursor: not-allowed;
+}
+
+.login-error {
+  width: 100%;
+  max-width: 380px;
+
+  background: #fee2e2;
+  color: #dc2626;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  text-align: center;
+  margin-bottom: 15px;
 }
