@@ -1,0 +1,409 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* Login & Signup container */
+.container {
+  width: 90%;
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 30px;
+}
+
+/* Form */
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs */
+.container input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input when clicked */
+.container input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Button */
+.container button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.container button:hover {
+  background: #3730a3;
+}
+
+/* Disabled button */
+.container button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .container {
+    margin: 40px auto;
+    padding: 25px;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+}
+/* =========================
+   LOGIN PAGE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2ff;
+}
+
+/* Main login container */
+.container {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Login card */
+.container form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.container input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* Input focus */
+.container input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+/* Login button */
+.container button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background: #3730a3;
+}
+
+.container button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+
+  padding: 12px;
+  border-radius: 8px;
+
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  .container form {
+    padding: 25px 20px;
+  }
+
+  .container h1 {
+    font-size: 26px;
+  }
+}
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  height: 100vh;
+  width: 100%;
+  background: #f1f1f1;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 10px   rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border: 1px solid white;
+
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2f04f1;
+}
+
+.dashboard-header nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-link.active {
+  color: #3155e7;
+}
+
+.dashboard-header button {
+  background: transparent;
+  color:#0000ff;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #7b7bf3;
+  width: 60px;
+}
+
+
+/* =========================
+   WELCOME BOX
+========================= */
+
+.welc {
+  width: 70%;
+  max-width: 1000px;
+  margin: 35px auto 20px;
+  background: linear-gradient(135deg, #2645b7, #2547d8);
+  border-radius: 10px;
+  padding: 28px 30px;
+  box-sizing: border-box;
+}
+
+.welc-text h1 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.welc-text p {
+  margin: 8px 0 0;
+  color:#ffffff;
+  font-size: 13px;
+}
+
+
+/* =========================
+   THREE ACCOUNT BOXES
+========================= */
+
+.boxs {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+}
+
+.box {
+  flex: 1;
+  background: #f8f9fc;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.box-1 h2 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.box-1 p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+}
+
+
+/* =========================
+   QUICK ACTION
+========================= */
+
+.dashboard > h1 {
+  width: 70%;
+  max-width: 1000px;
+  margin: 30px auto 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   QUICK ACTION BUTTONS
+========================= */
+
+.nav-2 {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-2 .nav-link {
+  background: #3155e7;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.nav-2 .nav-link:hover {
+  background: #2547d8;
+}
+.settings {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.settings form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings input {
+  padding: 12px;
+}
+
+.settings button {
+  padding: 12px;
+}
